@@ -68,17 +68,24 @@ export default function Home() {
                         rel="noopener noreferrer"
                     >
                         <h2 className={inter.className}>Todo App</h2>
-                        {/* <p className={inter.className}> */}
+                        <p className={inter.className}>
+                            Sorry for broken layout 😬
+                        </p>
+                        <p className={inter.className}>
+                            The only working function is fetch function. it
+                            triggered at first render and you can also hit fetch
+                            button to refetch and see the result in console.
+                        </p>
                         <form onSubmit={AddTodo}>
                             <input
                                 type="text"
                                 placeholder="what to do?"
                                 value={activity}
                                 onChange={(e) => setActivity(e.target.value)}
+                                disabled
                             />
-                            <button>Add Task</button>
+                            <button disabled>Add Task</button>
                         </form>
-                        {/* </p> */}
                     </div>
 
                     <div
